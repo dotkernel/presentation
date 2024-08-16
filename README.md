@@ -26,9 +26,9 @@ based on this js framework:  https://revealjs.com/
 - presenter:   Alexmerlin
   
 branch "main"
-  -> folder "middleware"
-              -> index.md  general presentation  
-              -> weuc-2024.md -> https://presentation.dotkernel.org/middleware/weuc-2024
-              -> KONF-2024.md -> https://presentation.dotkernel.org/middleware/KONF-2024
+  - folder "middleware"
+              - index.md  general presentation  
+              - weuc-2024.md -> https://presentation.dotkernel.org/middleware/weuc-2024
+              - KONF-2024.md -> https://presentation.dotkernel.org/middleware/KONF-2024
 
 
