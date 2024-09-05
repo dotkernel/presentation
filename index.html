@@ -1,46 +1,90 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>DotKernel presentation</title>
+    <title>DotKernel Presentations</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/dotkernel.css">
-
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>
-					<section>Slide 2 top</section>
-					<section>Slide 2 middle</section>
-					<section>Slide 2 bottom</section>
-				</section>
-				<section>Slide 3</section>
-			</div>
-		</div>
-
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-				progress: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+    <link rel="stylesheet" href="dist/styles.css">
+    <link rel="stylesheet" href="https://docs.dotkernel.org/css/bootstrap.css" />
+</head>
+<body>
+<header>
+    <img src="https://docs.dotkernel.org/img/dk_logo_2024.svg" class="img-fluid" alt="DotKernel logo" />
+    <span class="d-inline-flex fs-1 align-bottom">Presentations</span>
+</header>
+<hr />
+<main>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col">
+                    <img src="https://docs.dotkernel.org/img/api/token-authentication.png" class="img-fluid rounded mx-auto d-block" alt="placeholder" />
+                </div>
+                <div class="col">
+                    <h2>Middleware vs MVC</h2>
+                    <div class="table-responsive">
+                        <table class="table table-hover table-sm">
+                            <thead class="table-light">
+                            <tr>
+                                <th scope="col">Date</th>
+                                <th scope="col">Event</th>
+                                <th scope="col">Presenter</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>2024-09-05</td>
+                                <td>
+                                    <a href="./presentations/middleware-vs-mvc/mannheim-2024/">Mannheim 2024</a>
+                                </td>
+                                <td>Julian</td>
+                            </tr>
+                            <tr>
+                                <td>2024-09-04</td>
+                                <td>
+                                    <a href="./presentations/middleware-vs-mvc/weuc-2024/">WEUC 2024</a>
+                                </td>
+                                <td>Julian</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col">
+                    <img src="https://docs.dotkernel.org/img/api/token-authentication.png" class="img-fluid rounded mx-auto d-block" alt="placeholder" />
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header fw-bold">
+                            MVC vs Middleware
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <a href="./presentations/mvc-vs-middleware/mannheim-2024/">Mannheim 2024</a>
+                                    <span class="text-muted">presented by Julian on 5th of September, 2024</span>
+                                </li>
+                                <li class="list-group-item">
+                                    <a href="./presentations/mvc-vs-middleware/weuc-2024/">WEUC 2024</a>
+                                    <span class="text-muted">presented by Julian on 4th of September, 2024</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</main>
+<hr />
+<footer>
+    &#169; 2024 DotKernel
+</footer>
+</body>
 </html>

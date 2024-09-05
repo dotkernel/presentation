@@ -1,0 +1,16 @@
+header {
+  margin: .5rem auto 0 auto;
+  text-align: center;
+  width: 70%;
+}
+
+main {
+  margin: auto;
+  width: 70%;
+}
+
+footer {
+  display: block;
+  margin: auto;
+  width: 70%;
+}
