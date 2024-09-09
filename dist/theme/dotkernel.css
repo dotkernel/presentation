@@ -364,10 +364,6 @@ section.has-light-background, section.has-light-background h1, section.has-light
   text-align: left;
 }
 
-/*.slide-base .content-left {*/
-/*  height: 700px;*/
-/*}*/
-
 .slide-image img {
   position: relative;
   max-height: 400px;
