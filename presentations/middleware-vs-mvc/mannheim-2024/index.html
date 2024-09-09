@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Subject 1 - Event 2</title>
+    <title>Middleware vs MVS - Mannheim 2024</title>
 
     <link rel="stylesheet" href="../../../dist/reset.css">
     <link rel="stylesheet" href="../../../dist/reveal.css">
@@ -15,14 +15,249 @@
 </head>
 <body>
 <div class="reveal">
+    <div class="dkLogo"></div>
     <div class="slides">
-        <section>Slide 1</section>
+        <!-- slide title -->
         <section>
-            <section>Slide 2 top</section>
-            <section>Slide 2 middle</section>
-            <section>Slide 2 bottom</section>
+            <img src="/css/theme/images/laminas-mezzio.png">
+            <h1>What is Laminas Project?</h1>
+            <h2>And why use it</h2>
         </section>
-        <section>Slide 3</section>
+        <!-- slide base -->
+        <section>
+            <div class="slide-base">
+                <h2>Historical PHP major vulnerabilities</h2>
+                <ul class="content-left">
+                    <li>SQL injections -> PDO, zend_db</li>
+                    <li>sending emails -> zend_mail</li>
+                </ul>
+                <div class="slide-image">
+                    <img src="/css/theme/images/security.jpg">
+                </div>
+            </div>
+        </section>
+        <!-- slide base -->
+        <section>
+            <div class="slide-base">
+                <h2>Zend framework 1</h2>
+                <p>Built as a collection of libraries, not a monolith framework</p>
+                <div class="slide-image">
+                    <img src="/css/theme/images/function-block-library.jpg">
+                </div>
+            </div>
+        </section>
+        <!-- slide base -->
+        <section>
+            <div class="slide-base">
+                <h2>Lack of standardization</h2>
+                <ul class="content-left">
+                    <li>Vendor lock-in</li>
+                    <li class="li-no-bullet">
+                        <ul>
+                            <li>Good for developer (more or less)</li>
+                            <li>Bad for client</li>
+                        </ul>
+                    </li>
+                    <li>Chaotic architecture</li>
+                    <li class="li-no-bullet">
+                        <ul>
+                            <li>Bad for everybody</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="slide-image">
+                    <img src="/css/theme/images/chaos.jpg">
+                </div>
+            </div>
+        </section>
+        <!-- slide base -->
+        <section>
+            <div class="slide-base">
+                <h2>The modern world is built on standards</h2>
+                <p>Standards for products and services ensure</p>
+                <ul class="content-left">
+                    <li>Safety</li>
+                    <li>Quality</li>
+                    <li>Reliability</li>
+                </ul>
+                <div class="slide-image">
+                    <img src="/css/theme/images/DIN_934_8.8_verz_Tech.jpg">
+                </div>
+            </div>
+        </section>
+        <!-- slide base -->
+        <section>
+            <div class="slide-base">
+                <h2>PSR and PHP-FIG</h2>
+                <p>PHP Standard Recommendation (PSR)</p>
+                <p>Published by the PHP Framework Interoperability Group (PHP-FIG)</p>
+                <p>In code, PSRs are interfaces that must be implemented</p>
+                <div class="slide-image">
+                    <img src="/css/theme/images/php-fig.png">
+                </div>
+            </div>
+        </section>
+        <!-- slide base -->
+        <section>
+            <div class="slide-base">
+                <h2>Laminas and PSR</h2>
+                <p>Laminas Project, its components and its Mezzio microframework follow as many PSRs as is possible and feasible</p>
+                <p>The goal is to implement all of them (eventually)</p>
+                <div class="slide-image">
+                    <img src="/css/theme/images/laminas-mezzio.png">
+                </div>
+            </div>
+        </section>
+        <!-- slide base -->
+        <section>
+            <div class="slide-base">
+                <h2>PSR in Mezzio microframework</h2>
+                <ul class="content-left">
+                    <li>PSR-7: HTTP Message Interface</li>
+                    <li>PSR-15: HTTP Handlers</li>
+                    <li>PSR-17: HTTP Factories</li>
+                </ul>
+                <p>General PSR: 0, 1, 2, 3, 4 etc.</p>
+                <div class="slide-image">
+                    <img src="/css/theme/images/middleware.jpg">
+                </div>
+            </div>
+        </section>
+        <!-- slide base -->
+        <section>
+            <div class="slide-base">
+                <h2>Laminas components updates</h2>
+                <p>Laminas maintainers focus on both areas</p>
+                <ul class="content-left">
+                    <li>Evolution of PHP</li>
+                    <li class="li-no-bullet">
+                        <ul>
+                            <li>Generates backward incompatibilities</li>
+                        </ul>
+                    </li>
+                    <li>Evolution of PSRs</li>
+                    <li class="li-no-bullet">
+                        <ul>
+                            <li>Changes for system architecture</li>
+                            <li>Updates for interface implementation</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="slide-flow">
+                    PSR-2
+                    <div class="arrow-right-200"></div>
+                    PSR-12
+                </div>
+            </div>
+        </section>
+        <!-- slide base -->
+        <section>
+            <div class="slide-base">
+                <h2>PSR methodology</h2>
+                <ul class="content-left">
+                    <li>RFC documents contain technical specifications and organizational notes for the Internet and are the core output of the IETF</li>
+                    <li>PSR contains the theoretical definition of the RFC</li>
+                    <li>Coding the interface</li>
+                    <li>Implementing the interface</li>
+                </ul>
+                <div class="slide-flow">
+                    RFC
+                    <div class="arrow-right-100"></div>
+                    PSR-11
+                    <div class="arrow-right-100"></div>
+                    psr/container interface V1
+                    <div class="arrow-right-100"></div>
+                    interface implementation
+                </div>
+            </div>
+        </section>
+        <!-- slide base -->
+        <section>
+            <div class="slide-base">
+                <h2>PSR methodology example</h2>
+                <div class="left">
+                    <p>Name: PSR-3 Logger</p>
+                    <p>Repo: https://github.com/php-fig/log</p>
+                    <p>Namespace: Psr\Log</p>
+                    <ul class="content-left">
+                        <li>php-fig - GitHub org name</li>
+                        <li>log - standardului name</li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <p>Name: PSR-11 Container interface (servicemanager)</p>
+                    <p>Namespace: Psr\Container</p>
+                    <p>psr/container -> V1 service manager 3</p>
+                    <p>PSR-11</p>
+                    <ul class="content-left">
+                        <li>v1 - service manager 3</li>
+                        <li>v2 - service manager 4</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- slide base -->
+        <section>
+            <div class="slide-base">
+                <h2>Example: PSR-3 Logger Interface</h2>
+                <p>Standards are evolving, as the PHP version</p>
+                <ul class="content-left">
+                    <li>php-fig/log version 1 implements PSR-3 Logger, require PHP >=5.3.0</li>
+                    <li>php-fig/log version 2 breaks BC by using PHP 8.0</li>
+                    <li>php-fig/log version 3 breaks BC by adding return type</li>
+                </ul>
+            </div>
+            <div class="slide-image">
+                <img src="/css/theme/images/upgrade.png">
+            </div>
+        </section>
+        <!-- slide base -->
+        <section>
+            <div class="slide-base">
+                <h2>Evolution of PSR</h2>
+                <p>Standards are evolving</p>
+                <ul class="content-left">
+                    <li>PSR-2: Coding Style Guide - replaced by PSR-12</li>
+                    <li>Laminas-servicemanager v4</li>
+                </ul>
+            </div>
+            <div class="slide-image">
+                <img src="/css/theme/images/upgrade.png">
+            </div>
+        </section>
+        <!-- slide base -->
+        <section>
+            <div class="slide-base">
+                <h2>Long-term vs hit & run</h2>
+                <p>Milk the cow vs eat the cow right now</p>
+                <div class="left">
+                    <img src="/css/theme/images/milk.png">
+                </div>
+                <div class="right">
+                    <img src="/css/theme/images/steak.png">
+                </div>
+            </div>
+        </section>
+        <!-- slide base -->
+        <section>
+            <div class="slide-base">
+                <h2>Ending notes</h2>
+                <ul class="content-left">
+                    <li>Laminas Project is not a framework</li>
+                    <li class="li-no-bullet">
+                        <ul>
+                            <li>Frameworks can be built in minutes</li>
+                        </ul>
+                    </li>
+                    <li>Laminas-Mezzio implements PSR</li>
+                    <li class="li-no-bullet">
+                        <ul>
+                            <li>For future-proof stability</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </div>
 </div>
 
