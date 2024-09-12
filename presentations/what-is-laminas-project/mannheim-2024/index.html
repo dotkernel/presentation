@@ -15,13 +15,13 @@
 </head>
 <body>
 <div class="reveal">
-    <div class="dkLogo"></div>
+    <div class="apidemiaLogo"></div>
     <div class="slides">
         <!-- slide title -->
         <section>
-            <img src="/css/theme/images/laminas-mezzio.png">
             <h1>What is Laminas Project?</h1>
             <h2>And why use it</h2>
+            <img src="/css/theme/images/laminas-mezzio.png">
         </section>
         <!-- slide base -->
         <section>
@@ -46,10 +46,14 @@
                 </div>
             </div>
         </section>
+        <!-- slide title -->
+        <section>
+            <h1>Standardization</h1>
+        </section>
         <!-- slide base -->
         <section>
             <div class="slide-base">
-                <h2>Lack of standardization</h2>
+                <p>Lack of standardization</p>
                 <ul class="content-left">
                     <li>Vendor lock-in</li>
                     <li class="li-no-bullet">
@@ -73,7 +77,7 @@
         <!-- slide base -->
         <section>
             <div class="slide-base">
-                <h2>The modern world is built on standards</h2>
+                <p>The modern world is built on standards</p>
                 <p>Standards for products and services ensure</p>
                 <ul class="content-left">
                     <li>Safety</li>
@@ -85,12 +89,14 @@
                 </div>
             </div>
         </section>
+        <!-- slide title -->
+        <section>
+            <h1>PHP Standard Recommendation (PSR)</h1>
+        </section>
         <!-- slide base -->
         <section>
             <div class="slide-base">
-                <h2>PSR and PHP-FIG</h2>
-                <p>PHP Standard Recommendation (PSR)</p>
-                <p>Published by the PHP Framework Interoperability Group (PHP-FIG)</p>
+                <p>PSRs are published by the PHP Framework Interoperability Group (PHP-FIG)</p>
                 <p>In code, PSRs are interfaces that must be implemented</p>
                 <div class="slide-image">
                     <img src="/css/theme/images/php-fig.png">
@@ -100,9 +106,8 @@
         <!-- slide base -->
         <section>
             <div class="slide-base">
-                <h2>Laminas and PSR</h2>
                 <p>Laminas Project, its components and its Mezzio microframework follow as many PSRs as is possible and feasible</p>
-                <p>The goal is to implement all of them (eventually)</p>
+                <p>The goal is to implement all PSRs (eventually)</p>
                 <div class="slide-image">
                     <img src="/css/theme/images/laminas-mezzio.png">
                 </div>
@@ -111,7 +116,7 @@
         <!-- slide base -->
         <section>
             <div class="slide-base">
-                <h2>PSR in Mezzio microframework</h2>
+                <p>PSR in Mezzio microframework</p>
                 <ul class="content-left">
                     <li>PSR-7: HTTP Message Interface</li>
                     <li>PSR-15: HTTP Handlers</li>
@@ -123,11 +128,26 @@
                 </div>
             </div>
         </section>
+        <!-- slide title -->
+        <section>
+            <h1>Laminas components updates</h1>
+        </section>
         <!-- slide base -->
         <section>
             <div class="slide-base">
-                <h2>Laminas components updates</h2>
-                <p>Laminas maintainers focus on both areas</p>
+                <ul class="content-left">
+                    <li>Evolution of PHP</li>
+                    <li class="li-no-bullet">
+                        <ul>
+                            <li>Generates backward incompatibilities</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- slide base -->
+        <section>
+            <div class="slide-base">
                 <ul class="content-left">
                     <li>Evolution of PHP</li>
                     <li class="li-no-bullet">
@@ -150,10 +170,40 @@
                 </div>
             </div>
         </section>
+        <!-- slide title -->
+        <section>
+            <h1>PSR methodology</h1>
+        </section>
         <!-- slide base -->
         <section>
             <div class="slide-base">
-                <h2>PSR methodology</h2>
+                <ul class="content-left">
+                    <li>RFC documents contain technical specifications and organizational notes for the Internet and are the core output of the IETF</li>
+                </ul>
+            </div>
+        </section>
+        <!-- slide base -->
+        <section>
+            <div class="slide-base">
+                <ul class="content-left">
+                    <li>RFC documents contain technical specifications and organizational notes for the Internet and are the core output of the IETF</li>
+                    <li>PSR contains the theoretical definition of the RFC</li>
+                </ul>
+            </div>
+        </section>
+        <!-- slide base -->
+        <section>
+            <div class="slide-base">
+                <ul class="content-left">
+                    <li>RFC documents contain technical specifications and organizational notes for the Internet and are the core output of the IETF</li>
+                    <li>PSR contains the theoretical definition of the RFC</li>
+                    <li>Coding the interface</li>
+                </ul>
+            </div>
+        </section>
+        <!-- slide base -->
+        <section>
+            <div class="slide-base">
                 <ul class="content-left">
                     <li>RFC documents contain technical specifications and organizational notes for the Internet and are the core output of the IETF</li>
                     <li>PSR contains the theoretical definition of the RFC</li>
@@ -171,50 +221,110 @@
                 </div>
             </div>
         </section>
+        <!-- slide title -->
+        <section>
+            <h1>PSR methodology examples</h1>
+        </section>
         <!-- slide base -->
         <section>
             <div class="slide-base">
-                <h2>PSR methodology example</h2>
-                <div class="left">
-                    <p>Name: PSR-3 Logger</p>
-                    <p>Repo: https://github.com/php-fig/log</p>
-                    <p>Namespace: Psr\Log</p>
-                    <ul class="content-left">
-                        <li>php-fig - GitHub org name</li>
-                        <li>log - standardului name</li>
-                    </ul>
-                </div>
-                <div class="right">
-                    <p>Name: PSR-11 Container interface (servicemanager)</p>
-                    <p>Namespace: Psr\Container</p>
-                    <p>psr/container -> V1 service manager 3</p>
-                    <p>PSR-11</p>
-                    <ul class="content-left">
-                        <li>v1 - service manager 3</li>
-                        <li>v2 - service manager 4</li>
-                    </ul>
-                </div>
+                <h2>PSR-3 Logger</h2>
+                <p>Repo: https://github.com/php-fig/log</p>
+                <p>Namespace: Psr\Log</p>
+                <ul class="content-left">
+                    <li>php-fig - GitHub org name</li>
+                    <li>log - standard name</li>
+                </ul>
             </div>
         </section>
         <!-- slide base -->
         <section>
             <div class="slide-base">
-                <h2>Example: PSR-3 Logger Interface</h2>
-                <p>Standards are evolving, as the PHP version</p>
+                <h2>PSR-11 Container interface (servicemanager)</h2>
+                <p>Namespace: Psr\Container</p>
+                <p>psr/container -> V1 service manager 3</p>
+                <p>PSR-11</p>
                 <ul class="content-left">
-                    <li>php-fig/log version 1 implements PSR-3 Logger, require PHP >=5.3.0</li>
-                    <li>php-fig/log version 2 breaks BC by using PHP 8.0</li>
-                    <li>php-fig/log version 3 breaks BC by adding return type</li>
+                    <li>v1 - service manager 3</li>
+                    <li>v2 - service manager 4</li>
+                </ul>
+            </div>
+        </section>
+        <!-- slide base -->
+        <section>
+            <div class="slide-base">
+                <h2>PSR-3 Logger Interface</h2>
+                <p>Standards are evolving along with the PHP version</p>
+                <ul class="content-left">
+                    <li>php-fig/log version 1</li>
+                    <li class="li-no-bullet">
+                        <ul>
+                            <li>implements PSR-3 Logger, requires PHP >=5.3.0</li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <div class="slide-image">
-                <img src="/css/theme/images/upgrade.png">
+                <img src="/css/theme/images/upgrade-wh.png">
             </div>
         </section>
         <!-- slide base -->
         <section>
             <div class="slide-base">
-                <h2>Evolution of PSR</h2>
+                <h2>PSR-3 Logger Interface</h2>
+                <p>Standards are evolving along with the PHP version</p>
+                <ul class="content-left">
+                    <li>php-fig/log version 1</li>
+                    <li class="li-no-bullet">
+                        <ul>
+                            <li>implements PSR-3 Logger, requires PHP >=5.3.0</li>
+                        </ul>
+                    </li>
+                    <li>php-fig/log version 2</li>
+                    <li class="li-no-bullet">
+                        <ul>
+                            <li>breaks BC by using PHP 8.0</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="slide-image">
+                <img src="/css/theme/images/upgrade-wh.png">
+            </div>
+        </section>
+        <!-- slide base -->
+        <section>
+            <div class="slide-base">
+                <h2>PSR-3 Logger Interface</h2>
+                <p>Standards are evolving along with the PHP version</p>
+                <ul class="content-left">
+                    <li>php-fig/log version 1</li>
+                    <li class="li-no-bullet">
+                        <ul>
+                            <li>implements PSR-3 Logger, requires PHP >=5.3.0</li>
+                        </ul>
+                    </li>
+                    <li>php-fig/log version 2</li>
+                    <li class="li-no-bullet">
+                        <ul>
+                            <li>breaks BC by using PHP 8.0</li>
+                        </ul>
+                    </li>
+                    <li>php-fig/log version 3</li>
+                    <li class="li-no-bullet">
+                        <ul>
+                            <li>breaks BC by adding return type</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="slide-image">
+                <img src="/css/theme/images/upgrade-wh.png">
+            </div>
+        </section>
+        <!-- slide base -->
+        <section>
+            <div class="slide-base">
                 <p>Standards are evolving</p>
                 <ul class="content-left">
                     <li>PSR-2: Coding Style Guide - replaced by PSR-12</li>
@@ -222,7 +332,7 @@
                 </ul>
             </div>
             <div class="slide-image">
-                <img src="/css/theme/images/upgrade.png">
+                <img src="/css/theme/images/evolution-wh.png">
             </div>
         </section>
         <!-- slide base -->
@@ -247,15 +357,20 @@
                     <li class="li-no-bullet">
                         <ul>
                             <li>Frameworks can be built in minutes</li>
+                            <li>Promotes code decoupling</li>
                         </ul>
                     </li>
                     <li>Laminas-Mezzio implements PSR</li>
                     <li class="li-no-bullet">
                         <ul>
-                            <li>For future-proof stability</li>
+                            <li>Future-proof stability</li>
+                            <li>Does not reinvent the wheel</li>
                         </ul>
                     </li>
                 </ul>
+                <div class="slide-image">
+                    <img src="/css/theme/images/future-proof-wh.png">
+                </div>
             </div>
         </section>
     </div>
