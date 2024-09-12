@@ -4,7 +4,6 @@
  * By Hakim El Hattab, http://hakim.se
  */
 @import url(./fonts/source-sans-pro/source-sans-pro.css);
-@import url(https://fonts.googleapis.com/css?family=Space+Grotesk:200,300,400,500,700);
 @import url(https://fonts.googleapis.com/css?family=Barlow:400,500,600);
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222;
@@ -14,14 +13,14 @@ section.has-light-background, section.has-light-background h1, section.has-light
  * GLOBAL STYLES
  *********************************************/
 :root {
-  --r-background-color: linear-gradient(180deg, #FFF6E6 0%, #FFFFFF 100%);
-  --r-main-font: Space Grotesk, sans-serif;
-  --r-main-font-size: 42px;
-  --r-main-color: #000;
+  --r-background-color: blue;
+  --r-main-font: Barlow, sans-serif;
+  --r-main-font-size: 54px;
+  --r-main-color: #fff;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
-  --r-heading-font: Space Grotesk, sans-serif;
-  --r-heading-color: #000;
+  --r-heading-font: Barlow, sans-serif;
+  --r-heading-color: #fff;
   --r-heading-line-height: 1.2;
   --r-heading-letter-spacing: normal;
   --r-heading-text-transform: uppercase;
@@ -43,7 +42,10 @@ section.has-light-background, section.has-light-background h1, section.has-light
 }
 
 .reveal-viewport {
-  background: linear-gradient(180deg, #FFF6E6 0%, #FFFFFF 100%);
+  background: url("/css/theme/images/header_bg@2x.webp");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: auto;
   background-color: var(--r-background-color);
 }
 
@@ -367,7 +369,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .slide-image img {
   position: relative;
   max-height: 400px;
-  min-height: 200px;
+  min-height: 300px;
   bottom: 0;
 }
 
@@ -401,7 +403,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   margin: 10px 20px;
   height: 30px;
   width: 100px;
-  background-image: url("/css/theme/images/arrow-right.jpg");
+  background-image: url("/css/theme/images/arrow-right-wh1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -411,7 +413,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   margin: 0 20px;
   height: 55px;
   width: 200px;
-  background-image: url("/css/theme/images/arrow-right.jpg");
+  background-image: url("/css/theme/images/arrow-right-wh1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -423,7 +425,19 @@ section.has-light-background, section.has-light-background h1, section.has-light
   right: 50px;
   height: 55px;
   width: 303px;
-  background-image: url("https://www.dotkernel.com/wp-content/uploads/2024/05/DK_LOGO_2024-big.svg");
+  background-image: url("/css/theme/images/DK_LOGO_2024-big.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.apidemiaLogo {
+  position: fixed;
+  bottom: 70px;
+  right: 50px;
+  height: 60px;
+  width: 303px;
+  background-image: url("/css/theme/images/logo-apidemia.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
